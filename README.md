@@ -49,7 +49,7 @@ This project demonstrates the setup and configuration of a Windows Active Direct
 
 ### 1. Server Configuration  
 - Installed Windows Server  
-- Configured static IP address  
+- Configured static IP address  [Link to Screenshot](Server-Configuration/static-ip.png)
 - Renamed server to Server-01  
 - Configured DNS  
 
