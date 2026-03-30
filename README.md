@@ -54,7 +54,7 @@ This project demonstrates the setup and configuration of a Windows Active Direct
 - Configured DNS  | [DNS Configure](Server-Configuration/dns-configure.png) | [DNS Verify](Server-Configuration/dns-verify.png)
 
 ### 2. Active Directory Setup  
-- Installed AD DS role  | [Domain Controller Configuration](Server-Configuration/dc.png)
+- Installed AD DS role  | [Domain Controller Configuration](Server-Configuration/DC.png)
 - Promoted server to Domain Controller  
 - Created new forest: homelab.local  
 
