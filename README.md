@@ -48,38 +48,40 @@ This project demonstrates the setup and configuration of a Windows Active Direct
 ## ⚙️ Setup Process  
 
 ### 1. Server Configuration  
-- Installed Windows Server  
-- Configured static IP address  [Link to Screenshot](Server-Configuration/static-ip.png)
-- Renamed server to Server-01  
-- Configured DNS  
+- Installed Windows Server and Update | [Windows Server Update](Server-Configuration/windows-update.png)
+- Configured static IP address | [Static IP Setup](Server-Configuration/static-ip.png)
+- Renamed server to Server-01
+- Configured DNS  | [DNS Configure](Server-Configuration/dns-configure.png) | [DNS Verify](Server-Configuration/dns-verify.png)
 
 ### 2. Active Directory Setup  
-- Installed AD DS role  
+- Installed AD DS role  | [Domain Controller Configuration](Server-Configuration/dc.png)
 - Promoted server to Domain Controller  
 - Created new forest: homelab.local  
 
 ### 3. User & Group Management  
-- Created Organizational Units (OUs)  
-- Added users and security groups  
-- Assigned users to appropriate groups  
+- Created Organizational Units (OUs)  | [OU and User Creation](Server-Configuration/User-Management/user-ou.png)
+- Added users and security groups | [Security Group Creation and Assignment](Server-Configuration/User-Management/group.png)
+- Assigned users to appropriate groups | [Access Control](Server-Configuration/User-Management/access-shared.png) 
 
 ### 4. Group Policy Configuration  
 - Configured password policies  
 - Enforced security settings  
-- Applied policies to specific OUs  
+- Applied policies to specific OUs  | [Group Policies](Server-Configuration/User-Management/GPO/default-gpo.png)
+- Network Mapping | [Network Map Drive](Server-Configuration/User-Management/GPO/network-map-drive.png)
+- Redirect Client Workstation to OU | [Redirect Workstation](Server-Configuration/User-Management/GPO/redirect-client.png)
 
 ### 5. Client Machine Setup  
-- Installed Windows 11 Pro  
+- Installed Windows 11 Pro 
 - Joined machine to domain  
-- Logged in with domain user account  
-- Tested network file sharing  
+- Logged in with domain user account  | [User Domain Login](Server-Configuration/User-Management/Client-Workstation/login.php)
+- Tested network file sharing  | [User Domain Login](Server-Configuration/User-Management/Client-Workstation/network-attempt.png)
 
 ---
 
 ## 🚧 Challenges & Solutions  
 
-- Issue: Client could not join domain  
-  Fix: Corrected DNS settings to point to Domain Controller  
+- Issue: IT group was not receiving Local Admin Privileges 
+  Fix: Change Secruity filtering on the policy to Domain Computers  
 
 - Issue: GPO not applying  
   Fix: Ran gpupdate /force and verified OU linkage  
@@ -96,5 +98,6 @@ This project demonstrates the setup and configuration of a Windows Active Direct
 ## 🚀 Future Improvements  
 - Implement roaming profiles  
 - Automate user creation with PowerShell scripts  
-- Expand lab with multiple domain controllers for redundancy  
-- Add monitoring tools and logging  
+- Expand lab with network firewall and FileShare servers  
+- Add monitoring tools and logging
+- Create Internal network and connect via VPN 
