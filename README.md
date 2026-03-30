@@ -66,9 +66,9 @@ This project demonstrates the setup and configuration of a Windows Active Direct
 ### 4. Group Policy Configuration  
 - Configured password policies  
 - Enforced security settings  
-- Applied policies to specific OUs  | [Group Policies](Server-Configuration/User-Management/GPO/default-gpo.png)
-- Network Mapping | [Network Map Drive](Server-Configuration/User-Management/GPO/network-map-drive.png)
-- Redirect Client Workstation to OU | [Redirect Workstation](Server-Configuration/User-Management/GPO/redirect-client.png)
+- Applied policies to specific OUs  | [Group Policies](Server-Configuration/GPO/default-gpo.png)
+- Network Mapping | [Network Map Drive](Server-Configuration/GPO/network-map-drive.png)
+- Redirect Client Workstation to OU | [Redirect Workstation](Server-Configuration/GPO/redirect-client.png)
 
 ### 5. Client Machine Setup  
 - Installed Windows 11 Pro 
