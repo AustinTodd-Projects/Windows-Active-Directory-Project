@@ -73,8 +73,8 @@ This project demonstrates the setup and configuration of a Windows Active Direct
 ### 5. Client Machine Setup  
 - Installed Windows 11 Pro 
 - Joined machine to domain  
-- Logged in with domain user account  | [User Domain Login](Server-Configuration/User-Management/Client-Workstation/login.php)
-- Tested network file sharing  | [User Domain Login](Server-Configuration/User-Management/Client-Workstation/network-attempt.png)
+- Logged in with domain user account  | [User Domain Login](Server-Configuration/Client-Workstation/login.php)
+- Tested network file sharing  | [User Domain Login](Server-Configuration/Client-Workstation/network-attempt.png)
 
 ---
 
