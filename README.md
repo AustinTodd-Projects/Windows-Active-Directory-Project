@@ -60,7 +60,7 @@ This project demonstrates the setup and configuration of a Windows Active Direct
 
 ### 3. User & Group Management  
 - Created Organizational Units (OUs)  | [OU and User Creation](Server-Configuration/User-Management/user-ou.png)
-- Added users and security groups | [Security Group Creation and Assignment](Server-Configuration/User-Management/group.png)
+- Added users and security groups | [Security Group Creation and Assignment](Server-Configuration/User-Management/group-creation.png)
 - Assigned users to appropriate groups | [Access Control](Server-Configuration/User-Management/access-shared.png) 
 
 ### 4. Group Policy Configuration  
